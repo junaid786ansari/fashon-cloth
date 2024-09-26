@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Junaid Designer || fashon blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A9ThilykONtQBhi5u8qC8WpP9EQQ854-0g&s">
+	
+	<style type="text/css">
+		h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+		body {font-family: "Open Sans"}
+	</style>
+
+</head>
+<body>
+
+	<!-- navigation bar with social media icons -->
+	<div class="navbar">
+		<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		<a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+		<a href="#"><i class="fa-brands fa-flickr"></i></a>
+		<a href="#"><i class="fa-brands fa-twitter"></i></a>
+		<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="#" class="right"><i class="fa-solid fa-magnifying-glass"></i></a>
+	</div>
+
+	<!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
+	<div class="w3-content" style="max-width: 1600px;">
+		
+		<!-- Header -->
+		<header class="profile-header">
+			<h1 class="jane-bloglife"><b>JANE BLOGLIFE</b></h1>
+			<h6>Welcome to the blog of <span class="jane-world">Jane's world</span></h6>
+		</header>
+
+		<!-- Image Header -->
+		<div id="image-header">
+			<img class="image_Fashon-Blog" src="https://static.vecteezy.com/system/resources/previews/027/657/676/large_2x/city-walk-young-woman-standing-on-sidewalk-historic-building-facade-near-beautiful-girl-wearing-casual-clothes-and-looking-into-distance-batumi-historic-site-in-georgia-blurred-background-photo.jpg" alt="Fashon Blog" width="100%" height="auto" style="filter: brightness(0.50);">
+			<div class="button-blog">
+				<h1>Jane's</h1>
+				<h1><b>FASHON BLOG</b></h1>
+				<h6><button onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+			</div>
+		</div>
+
+		<!-- Grid -->
+		<div class="grid">
+			
+			<!-- Blog entries -->
+			<div class="blog-entries">
+				
+				<!-- Blog entry1 -->
+				<div class="blog-entry">
+					<div>
+						<h3>TITLE HEADING</h3>
+						<h5>Title description, <span>May 2, 2016</span></h5>
+					</div>
+					<div>
+						<img src="https://img.freepik.com/free-photo/happy-long-haired-brunette-woman-pink-attire-posing-sea-wall_197531-6266.jpg" alt="Girl Hat" style="width: 100%; filter: brightness(0.80);">
+						<p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+            			magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolobre magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+		
+						<p><button id="like-btn" onclick="likeFunction(this)"><b><i class="fa-solid 				fa-thumbs-up"></i> Like</b></button></p>
+						<p><button class="myBtn"><b>Replies</b>   <span>  1</span></button></p>
+<!-- document.getElementById('demo1').style.display='block' -->
+						<p class="w3-clear" style="height: 25px;"></p>
+						<!-- Example of comment field -->
+						<div class="demo1" style="display: none;">
+							<hr style="opacity: 0.3;">
+							<div id="column">
+								<div class="col1">
+								    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGvZ_qSigL87qWrXEr8zkPj2o1mw4x2S5lw&s" 		alt="Replies 1">
+								</div>
+								<div class="col2">
+										<h4>George <span>May 3, 2015, 6:32 PM</span></h4>
+										<p>Great blog post! Following</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<hr style="opacity: 0.3">
+
+				<!-- Blog entry2 -->
+					<div class="blog-entry">
+					<div>
+						<h3>TITLE HEADING</h3>
+						<h5>Title description, <span>April 23, 2016</span></h5>
+					</div>
+					<div>
+						<img src="https://img.freepik.com/free-photo/side-view-man-with-hat-posing-outside_23-2148448881.jpg" alt="Men in Hats" style="width: 100%; filter: brightness(0.80);">
+						<p><strong>Hats!</strong> The trend this summer is hats for men! </p>
+            			<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+            			magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+		
+						<p><button id="like-btn" onclick="likeFunction(this)"><b><i class="fa-solid 				fa-thumbs-up"></i> Like</b></button></p>
+						<p><button class="myBtn"><b>Replies</b>   <span>  2</span></button></p>
+<!-- document.getElementById('demo1').style.display='block' -->
+						<p class="w3-clear" style="height: 25px;"></p>
+						<!-- Example of comment field -->
+						<div class="demo1" style="display: none;">
+							<hr style="opacity: 0.3;">
+							<div id="column">
+								<div class="col1">
+								    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-B4gp84fREIU5mtLlXhiUAnDf7OpGx2LqQ&s" 		alt="Replies 2"><br>
+
+								    <img src="https://www.shutterstock.com/image-photo/beautiful-girl-sitting-on-stairs-260nw-418221496.jpg" 		alt="Replies 2">
+								</div>
+								<div class="col2">
+										<h4>Amber <span>April 26, 2015, 10:52 PM</span></h4>
+										<p>Love your blog page! Simply the test! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+
+										<h4>Angie <span>April 23, 2015, 9:12 PM</span></h4>
+										<p>Love hats!!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<hr style="opacity: 0.3">
+				<!-- Blog entry3 -->
+				<div class="blog-entry">
+					<div>
+						<h3>TITLE HEADING</h3>
+						<h5>Title description, <span>April 7, 2016</span></h5>
+					</div>
+					<div>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqCCQduO4XZximDxP14IDMjC0XYqWFCtE9Q&s" alt="Runway" style="width: 100%; filter: brightness(0.80);">
+						<p><strong>Dont miss!</strong>  The runway in New York City this weekend is gonna be legendary!</p>
+            			<p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+		
+						<p><button id="like-btn" onclick="likeFunction(this)"><b><i class="fa-solid 				fa-thumbs-up"></i> Like</b></button></p>
+						<p><button class="myBtn"><b>Replies</b>   <span>  3</span></button></p>
+<!-- document.getElementById('demo1').style.display='block' -->
+						<p class="w3-clear" style="height: 25px;"></p>
+						<!-- Example of comment field -->
+						<div class="demo1" style="display: none;">
+							<hr style="opacity: 0.3;">
+							<div id="column">
+								<div class="col1">
+								    <img src="https://img.freepik.com/premium-photo/backside-beautiful-girl-extend-arms-standing-beach-midst-blue-sky_29392-292.jpg" 		alt="Replies 1"><br>
+
+								    <img src="https://media.istockphoto.com/id/490725802/photo/man-at-the-sunrise.webp?b=1&s=170667a&w=0&k=20&c=uLoQmcsvHJ2iI-Yj863Eu66xfMuc6P-jj_R-uZc83ic=" 		alt="Replies 1"><br>
+
+								    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVo7WmZ-sPulWAi7XA_7AoWb8Z_bCWuWiOxw&s" 		alt="Replies 1">
+								</div>
+								<div class="col2">
+										<h4>Jane <span>April 10, 2015, 7:22 PM</span></h4>
+										<p>That was a great runway show! Thanks for everything.</p><br>
+
+										<h4>John <span> April 8, 2015, 10:32 PM</span></h4>
+										<p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><br>
+
+										<h4>Anja <span> April 7, 2015, 9:12 PM</span></h4>
+										<p>Cant wait for the runway to start!</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<hr style="opacity: 0.3">
+
+			<!-- END BLOG ENTRIES -->
+			</div>
+
+			<!-- About/Information menu -->
+			<div class="about-menu">
+				
+				<!-- About card -->
+				<div class="about-card">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYhaQG43pJjwMi5kErrVVTFN40zNJRqIuq5Q&s" alt="Jane" style="width: 100%;">
+					<div>
+						<h4>My Name</h4>
+						<p>Just me, myself and I exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+					</div>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Posts -->
+				<div class="posts">
+					<div>
+						<h4>Popular Posts</h4>
+					</div>
+					<ul>
+						<li>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9ZWCXH8ww-_kNkf-SPDF9JDMaqq1vmSE2g&s" alt="Image" style="width: 50px;">
+							<span class="span1">Denim</span>
+							<span class="span2">Sed mattis nunc</span>
+						</li>
+						<hr style="opacity: 0.3;">
+						<li>
+							<img src="https://i.pinimg.com/236x/4d/81/0a/4d810a1b3ffe99d52f5f9b9f7a6e0696.jpg" alt="Image" style="width: 50px;">
+							<span class="span1">Sweaters</span>
+							<span class="span2">Praes tinci sed</span>
+						</li>
+						<hr style="opacity: 0.3;">
+						<li>
+							<img src="https://st3.depositphotos.com/12731704/19191/i/450/depositphotos_191919290-stock-photo-business-colleagues-conference-meeting-room.jpg" alt="Image" style="width: 50px;">
+							<span class="span1">Workshop</span>
+							<span class="span2">Ultricies congue</span>
+						</li>
+						<hr style="opacity: 0.3;">
+						<li>
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91Jzfhlrq9lSJnNCpQSAqGLWmeFSu0bv4rA&s" alt="Image" style="width: 50px;">
+							<span class="span1">Trends</span>
+							<span class="span2">Lorem ipsum dipsum</span>
+						</li>
+						<hr style="opacity: 0.3;">
+					</ul>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Advertising -->
+				<div id="Advertising">
+					<div class="header">
+						<h4>Advertise</h4>
+					</div>
+					<div class="white-box">
+						<div class="span-box">
+							<span>Your AD Here</span>
+						</div>
+					</div>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Tags -->
+				<div id="Tags">
+					<div class="tag-header">
+						<h4>Tags</h4>
+					</div>
+					<div class="white-container">
+						<p>
+						<span class="black-span">Fashion</span> <span>New York</span> <span>London</span> <span>Hats</span> <span>Norway</span> <br><br> <span>Sweaters</span> <span>Ideas</span> <span>Deals</span> <span>Accessories</span> <span>News</span> <br><br> <span>Clothing</span> <span>Shopping</span> <span>Jeans</span> <span>Trends</span> 	
+						</p>
+					</div>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Inspiration -->
+				<div id="inspiration">
+					<div class="header-ins">
+						<h4>Inspiration</h4>
+					</div>
+					<div class="row">
+						<div class="col1">
+							<p><img src="https://media.istockphoto.com/id/512098356/photo/young-man-hiking-in-the-forest.jpg?s=612x612&w=0&k=20&c=IVoQXCucnPB3ieX0ptfFxnBK-cPCb6YgX4UhC9H9CAI=" alt="Jeans"></p>
+							<p><img src="https://media.istockphoto.com/id/1516817739/photo/portrait-of-a-smiling-schoolgirl-girl-with-a-briefcase-on-the-background-of-the-school.webp?b=1&s=170667a&w=0&k=20&c=buT2ZL4mutZvCXM4N5Jenkwjdur9sIC5s4ksGEVde_c=" alt="Jeans"></p>
+						</div>
+						<div class="col2">
+							<p><img src="https://media.istockphoto.com/id/858160872/photo/hipster-handsome-male-model-with-beard-wearing-black-blank-baseball-cap-with-space-for-your.jpg?s=612x612&w=0&k=20&c=FPNExCl2yoVKK0kSX0V9SoPnBy3hjkJ57RGWLTxsIvk=" alt="Men in Hats"></p>
+							<p><img src="https://media.istockphoto.com/id/478678839/photo/the-epitome-of-gorgeous-elegance.jpg?s=612x612&w=0&k=20&c=iD6muoVbTR6oJ_-oRTOIhmLIoTMS0V4u7gCRqaREo7s=" alt="Jeans"></p>
+						</div>
+					</div>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Follow me -->
+				<div id="follow">
+					<div class="header-follow">
+						<h4>Follow Me</h4>
+					</div>
+					<div class="social">
+						<i class="fa-brands fa-square-facebook"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-square-snapchat"></i>
+						<i class="fa-brands fa-flickr"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</div>
+				</div>
+				<hr style="opacity: 0.3; margin-left: 30px;">
+
+				<!-- Subscribe -->
+				<div class="subs-container">
+					<div class="subs-header">
+						<h4>Subscribe</h4>
+					</div>
+					<div class="subs-conten">
+						<p>Enter your e-mail below and get notified on the latest blog posts.</p>
+						<p><input type="text" name="email" placeholder="Enter e-mail" style="width: 100%;"></p>
+						<p><button type="button" onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+					</div>
+				</div>	
+
+			<!-- END About/Information menu -->
+			</div>
+
+			<!-- END GRID -->
+		</div>
+
+	<!-- END w3-content -->
+	</div>
+
+	<!-- Subscribel Model -->
+	<div id="subscribe">
+		<div>
+			<div>
+				<i onclick="document.getElementById('subscribe').style.display='none'" class="fa-solid fa-xmark"></i>
+				<h2>SUBSCRIBE</h2>
+				<p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+				<p><input type="text" placeholder="Enter e-mail"></p>
+				<button type="button" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Footer -->
+	<footer style="padding: 32px;">
+		<button><a href="#"><i class="fa-solid fa-arrow-up"></i> To the top</a></button>
+		<p>Powered by <a href="#" target="_blank">Jd.Designer</a></p>
+	</footer>
+<!-- script js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</script> <!-- jequery for toggle-->
+<script src="script.js"></script> <!-- script file -->
+</body>
+</html>
