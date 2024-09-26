@@ -1,0 +1,512 @@
+	* {
+		box-sizing: border-box;
+	}
+
+	/*style the body*/
+	body {
+		margin: 0;
+		background-color: #f2f2f2;
+	}
+
+
+	/*style the top navigation bar*/
+	.navbar {
+		overflow: hidden;
+		background-color: #333;
+	}
+	.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+
+	/*Right Align link*/
+	.navbar a.right {
+		float: right;
+	}
+
+	/*Change color on over*/
+	.navbar a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	/*Responsive navbar*/
+	@media screen and (max-width: 600px) {
+		.navbar{
+			display: block;
+		}
+	}
+
+	/*Style the Header*/
+	header.profile-header {
+		text-align: center;
+		padding: 20px;
+		background: #fff;
+	}
+	.profile-header h1{
+		font-size: 45px;
+	}
+	.profile-header h6 {
+		font-size: 18px;
+	}
+	.profile-header h6 span{
+		background-color: black;
+		color: white;
+	}
+
+	/*Responsive Header*/
+	@media screen and (max-width: 600px) {
+		/*everthing is fine*/
+	}
+
+	/*Style the Image Header*/
+	#image-header {
+		overflow: hidden;
+		background-size: cover;
+	}
+	#image-header div{
+		display: block;
+		position: absolute;
+		float: left;
+		top: 650px;
+		padding-left: 40px;
+		color: white;
+	}
+	#image-header div h1{
+		font-size: 50px;
+	}
+	#image-header div h6 button{
+		padding: 16px 20px;
+		font-size: 16px;
+		border: none;
+		background-color: #d9d9d9;
+	}
+	#image-header div h6 button:hover{
+		background-color: #e6e6e6;
+		cursor: pointer;
+	}
+
+	/*Responsive Image Header*/
+	@media only screen and (max-width: 600px) {
+    #image-header .button-blog{
+    	/*display: none;*/
+    	position: absolute;
+    	top: 350px;
+    }
+    #image-header .button-blog h1{
+		font-size: 20px;
+	}
+	#image-header .button-blog button{
+		font-size: 15px;
+		padding: 10px 10px;
+	}
+}
+	/*Style the Subscribe Model*/
+	#subscribe {
+		position: absolute;
+		top: 100px;
+		left: 300px;
+		background-color: #e6b000;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 20px 40px;
+		position: fixed;
+		width: 55%;
+	}
+	#subscribe .fa-xmark{
+		float: right;
+		font-size: 25px;
+		padding: 5px 10px;
+	}
+	#subscribe .fa-xmark:hover{
+		background-color: #f2f2f2;
+		cursor: pointer;
+	}
+	#subscribe h2{
+		font-size: 30px;
+	}
+	#subscribe input{
+		width: 100%;
+		height: 40px;
+		padding-left: 10px; 
+	}
+	#subscribe button{
+		width: 100%;
+		height: 45px;
+		padding: 12px 20px;
+		text-align: center;
+		border: none;
+		font-size: 16px;
+		color: white;
+		background-color: #ff3300; 
+	}
+	#subscribe button:hover{
+		background-color: #cccccc;
+		color: #111;
+		cursor: pointer;
+	}
+	/*Responsive Subscribe model*/
+	@media screen and (max-width: 600px) {
+		#subscribe {
+		position: absolute;
+		position: fixed;
+		top: 100px;
+		left: 20px;
+		width: 90%;
+	}
+	}
+	/*Style the Blog entries & About menu inside grid*/
+	.grid{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px 30px;
+	}
+	/*blog entries*/
+	.blog-entries{
+		width: 65%;
+	}
+	.blog-entry {
+		background-color: #ffffff;
+		padding: 20px 30px;
+		margin: 10px 0px;
+	}
+	.blog-entries .blog-entry h3{
+		text-align: center;
+		font-size: 22px;
+	}
+	.blog-entries .blog-entry h5{
+		text-align: center;
+		font-size: 18px;
+	}
+	.blog-entries .blog-entry h5 span{
+		text-align: center;
+		font-size: 18px;
+		color: #808080;
+	}
+	.blog-entries .blog-entry p {
+		font-size: 18px;
+	}
+
+	.blog-entries button {
+		padding: 10px 16px;
+		font-size: 15px;
+		font-weight: bold;
+		background-color: #fff;
+		border: solid 0.5px #cccccc;
+		overflow: hidden;
+	}
+	.blog-entries button:hover{
+		background-color: #cccccc;
+		cursor: pointer;
+	}
+	.blog-entries .myBtn{
+		padding: 10px 20px;
+		background-color: #000;
+		border: none;
+		color: #fff;
+		float: right;
+		position: relative;
+		top: -60px;
+	}
+	.blog-entries .myBtn:hover{
+		background-color: #cccccc;
+		cursor: pointer;		
+	}
+	.blog-entries .myBtn span{
+		padding: 5px 10px;
+		background-color: #fff;
+		color: #000;
+	}
+	.blog-entries #column {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.blog-entries #column .col1 {
+		width: 20%;
+		padding: 18px 0px;
+	}
+	.blog-entries #column .col1 img{
+		width: 100px;
+		height: 100px;
+		margin-top: 20px;
+	}
+	.blog-entries #column .col2{
+		width: 80%;
+		line-height: 20px;
+		padding: 15px 0px;
+	}
+	.blog-entries #column .col2 h4{
+		font-size: 22px;
+	}
+	.blog-entries #column .col2 h4 span {
+		font-size: 16px;
+		color: #808080;
+	}
+
+	/*about menu section*/
+	.about-menu{ 
+		width: 35%;
+	}
+
+	.about-card{
+		padding-top: 10px;
+		padding-left: 30px;
+	}
+	.about-card img{
+		width: 100%;
+		height: 300px;
+	}
+	.about-card div{
+		color: white;
+		background-color: #1a1a1a;
+		padding: 1px 30px;
+		position: relative;
+		top: -45px;
+	}
+	.about-card div h4{
+		font-size: 22px;
+	}
+	.about-card div p{
+		font-weight: 16px;
+	}
+
+	.posts div{
+		margin-left: 30px;
+
+	}
+	.posts div h4{
+		padding: 20px 30px;
+		background-color: #000;
+		color: #ffffff;
+		font-size: 20px;
+	}
+	.posts ul{
+		list-style-type: none;
+		background-color: #fff;
+		margin-left: 30px;
+		margin-top: -27px;
+		padding: 20px 30px;
+	}
+	.posts li img{
+		width: 50px;
+		height: 50px;
+	}
+	.posts li .span1 {
+		position: relative;
+		top: -30px;
+		font-size: 18px;
+		padding-left: 10px;
+	}
+	.posts li .span2 {
+		position: relative;
+		left: -50px;
+	}
+	.posts li:hover{
+		background-color: #f2f2f2;
+	}
+
+	/*Styling the Advertising*/
+	#Advertising {
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+	/*.header{
+		margin-left: 30px; 
+	}*/
+	#Advertising .header h4{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+	.white-box{
+		background-color: #fff;
+		padding: 20px 20px;
+		text-align: center;
+		margin-top: -27px;
+	}
+	.span-box{
+		background-color: #f2f2f2;
+		padding: 100px 0px;
+	}
+
+	/*Styling the Tags*/
+	#Tags{
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+	.tag-header h4{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+	.white-container{
+		background-color: #fff;
+		padding: 20px 20px;
+		text-align: center;
+		margin-top: -27px;
+	}
+	.white-container span{
+		background-color: #f2f2f2;
+		font-size: 18px;
+		position: relative;
+		top: -10px;
+		left: -10px;
+		margin-left: 5px;
+		padding: 2px 5px;
+	}
+	.white-container .black-span{
+		background-color: #000;
+		color: #fff;
+	}
+
+	/*Styling the inspiration*/
+	#inspiration{
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+	.header-ins h4{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+	#inspiration .row{
+		display: flex;
+		background-color: #fff;
+		padding: 5px 10px;
+		margin-top: -27px;
+	}
+	#inspiration .col1{
+		width: 50%;
+	}
+	#inspiration .col1 img{
+		width: 180px;
+		height: 140px;
+		margin-left: 10px;
+	}
+	#inspiration .col2{
+		width: 50%;
+	}
+	#inspiration .col2 img{
+		width: 180px;
+		height: 140px;
+		margin-left: 10px;
+	}
+
+	/*Styling the follow me*/
+	#follow{
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+	.header-follow h4{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+	#follow .social{
+		background-color: #fff;
+		padding: 10px 10px;
+		margin-top: -27px;
+		font-size: 25px;
+	}
+	#follow .social .fa-brands:hover{
+		color: #cccccc;
+	}
+
+	/*Styling the Subscribe*/
+	.subs-container{
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+	.subs-header h4{
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		padding: 20px 30px;
+	}
+	.subs-conten{
+		background-color: #fff;
+		padding: 10px 10px;
+		margin-top: -27px;
+		font-size: 18px;
+	}
+	.subs-conten input{
+		padding: 10px 10px;
+		font-size: 15px;
+	}
+	.subs-conten button{
+		padding: 10px 10px;
+		font-size: 15px;
+		width: 100%;
+		color: #fff;
+		background-color: #ff3300;
+		border: none;
+	}
+	.subs-conten button:hover{
+		color: #000;
+		background-color: #cccccc;
+		cursor: pointer;
+	}
+
+	/*Responsive the Gride*/
+	@media screen and (max-width: 600px) {
+		.grid{
+			flex-direction: column;
+			width: 100%;
+		}
+		.blog-entries{
+			width: 100%;
+		}
+		.grid .about-menu{ 
+			width: 100%;
+			margin-left: -30px;
+		}
+		#inspiration .col1,.col2 img{
+			height: auto;
+			margin-left: -10px;
+		}
+	}
+	
+
+	/*Styling the footer*/
+	footer{
+		width: 100%;
+		height: 200px;
+		background-color: #808080;
+	}
+	footer button{
+		padding: 14px 30px;
+		background-color: #000;
+		border: none;
+	}
+	footer button:hover{
+		background-color: #cccccc;
+		cursor: pointer;
+	}
+	footer button a{
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		font-size: 15px;
+	}
+	footer button a:hover{
+		color: #000;
+	}
+	footer p{
+		color: #fff;
+		padding: 20px 0px;
+		font-size: 17px;
+	}
+	footer p a{
+		color: #fff;
+	}
+	footer p a:hover{
+		color: #00ff00;
+	}
